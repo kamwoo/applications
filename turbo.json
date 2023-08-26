@@ -7,6 +7,11 @@
       "outputs": ["dist/**", ".next/**"],
       "cache": false
     },
+    "jam-map#build": {
+      "dependsOn": ["^build"],
+      "env": ["NODE_ENV"],
+      "outputs": ["dist/**", ".next/**"]
+    },
     "lint": {
       "outputs": []
     },

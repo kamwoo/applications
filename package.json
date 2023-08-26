@@ -1,5 +1,10 @@
 {
+  "name": "applications",
   "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
@@ -14,11 +19,9 @@
     "tsconfig": "*",
     "turbo": "latest"
   },
-  "name": "applications",
-  "packageManager": "yarn@1.22.10",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
-  "dependencies": {}
+  "dependencies": {},
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "packageManager": "yarn@1.22.10"
 }
